@@ -1,0 +1,17 @@
+{
+  "name": "chrome-ext",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc -p . --watch --outDir ./public/js/",
+    "build": "tsc -p ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/chrome": "^0.0.193",
+    "nodemon": "^2.0.19"
+  }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+
+  <body class="popup">
+    <div class="header">
+      <h1 class=>AutoConnect</h1>
+      <img src="assets/icons8-linkedin.svg" class="logo" alt="logo" />
+    </div>
+
+    <div class="total-connects">
+      <div class="total-connects-info">
+        <h2>Total connects sent:</h2>
+        <p class="total-connect-number">0</p>
+      </div>
+
+      <progress class="connect-progress" value="0" max="100" />
+    </div>
+
+    <div class="btn-div">
+      <button class="connect-btn">Start Connecting</button>
+      <button class="connect-btn-stop">Stop Connecting</button>
+    </div>
+    <script type="module" src="js/popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+{
+  "name": "AutoConnect",
+  "description": "Auto connect to people on LinkedIn!",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.linkedin.com/*"],
+      "js": ["js/content.js"]
+    }
+  ],
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": ["*://*.linkedin.com/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/assets/icons8-linkedin-16.png",
+      "32": "/assets/icons8-linkedin-32.png",
+      "48": "/assets/icons8-linkedin-48.png",
+      "128": "/assets/icons8-linkedin-128.png"
+    }
+  },
+  "icons": {
+    "16": "/assets/icons8-linkedin-16.png",
+    "32": "/assets/icons8-linkedin-32.png",
+    "48": "/assets/icons8-linkedin-48.png",
+    "128": "/assets/icons8-linkedin-128.png"
+  }
+}
+

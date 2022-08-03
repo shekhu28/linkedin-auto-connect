@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.popup {
+  width: 220px;
+  height: 250px;
+  background-color: #fafafa;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+.header img {
+  width: 50px;
+  height: 50px;
+}
+
+.header h1{
+  font-size: 18px;
+  font-weight: bold;
+  color: #07080b;
+  text-align: center;
+}
+
+.total-connects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.total-connects-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.total-connects h2 {
+  font-size: 12px;
+  font-weight: lighter;
+  color: #07080b;
+  margin: 0;
+  padding-right: 10px;
+}
+
+.total-connects p {
+  font-size: 24px;
+  font-weight: medium;
+  color: #07080b;
+  margin: 5px;
+}
+
+.total-connects progress {
+  width: 85%;
+  height: 12px;
+  border-radius: 50px;
+  background-color: #fafafa;
+}
+
+progress::-webkit-progress-bar {
+  border-radius: 15px;
+  background-color: #fafafa;
+  border: 1px solid #378fe9;
+}
+progress::-webkit-progress-value {
+  border-radius: 5px;
+  background-color: #378fe9;
+}
+
+.btn-div {
+  position: fixed;
+  bottom: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.connect-btn {
+  background-color: #fafafa;
+  border: 1px solid #378fe9;
+  border-radius: 50px;
+  color: #378fe9;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.connect-btn:hover {
+  cursor: pointer;
+  background-color: #378fe9;
+  color: #fafafa;
+}
+
+.clicked {
+  background-color: #378fe9;
+  color: #fafafa;
+}
+
+.connect-btn-stop {
+  display: none;
+  background-color: #fafafa;
+  color: #ff4747;
+  border: 1px solid #ff4747;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.connect-btn-stop:hover {
+  cursor: pointer;
+  background-color: #ff4747;
+  color: #fafafa;
+}
